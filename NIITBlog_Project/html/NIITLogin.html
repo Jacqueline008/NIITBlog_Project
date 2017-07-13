@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>NIITBlog-登录</title>
+    <!--css-header-->
+    <link rel="stylesheet" href="../css/css_NIITheader.css">
+    <!--css-NIITLogin-->
+    <link rel="stylesheet" href="../css/css_NIITLogin.css">
+</head>
+<body>
+<!--**************************************-->
+<!--网页上方固定不动的标头-->
+<div id="site-nav">
+    <div class="sn-container">
+    </div>
+</div>
+
+<!--*************************************************************-->
+<!--登录容器 begin-->
+<div id="login_container">
+    <!--登录容器左侧内容-->
+    <div id="login_left">
+        <h1>
+            25%陆地.75%海洋.62%NIIT
+            <br>
+            NIIT为你的成功加速!
+        </h1>
+    </div>
+    <!--登录容器右侧内容-->
+    <div id="login_right">
+        <div id="logincontent">
+            <h2>账户登录</h2>
+            <p id='error_message'></p>
+            <div id="login_user">
+                <input id="loginuser" name="loginuser" type="text"
+                       placeholder=" 请输入您的用户名" required/>
+            </div>
+            <div id="login_pwd">
+                <input id="loginpwd" name="loginpwd" type="password"
+                       placeholder=" 请输入您的密码" required/>
+            </div>
+            <a id="registernow" href="NIITRegister.html" target="_blank">未注册？去注册</a>
+            <input id="loginsubmit" type="submit" value="登录"/>
+        </div>
+    </div>
+</div>
+<!--登录容器 end-->
+<!--*************************************************************-->
+
+<div id="bg_test" style="height: 100px;width: 100%;"></div>
+
+</body>
+
+<!--js-jquery-->
+<script src="../javascript/jquery-2.2.4.min.js"></script>
+<!--js-NIITLogin-->
+<script src="../javascript/js_NIITLogin.js"></script>
+
+</html>

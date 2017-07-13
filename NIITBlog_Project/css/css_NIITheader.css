@@ -1,0 +1,151 @@
+/***********************网页上方固定不动的标头**********************/
+/*标头总背景*/
+#site-nav{
+    width:100%;
+    height:65px;
+    position:fixed;
+    z-index:2000;
+    background: #fff;
+    box-shadow: 1.5px 2.598px 9px 0 rgba(0, 0, 0, 0.054);
+}
+/*盛装标头中各内容的容器*/
+#site-nav .sn-container{
+    margin: 0 auto;
+    width: 1170px;
+    height:65px;
+}
+/*网站Logo*/
+#site-nav .sn-logo{
+    float: left;
+    position: relative;
+    top:7px;
+}
+#site-nav .sn-logo img{
+    width:180px;
+    height: 50px;
+}
+/*快速导航菜单*/
+#site-nav .sn-quick-menu{
+    float: right;
+}
+#site-nav .sn-quick-menu a{
+    display: block;
+    height: 65px;
+    color:#555;
+    font-family: '微软雅黑';
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 65px;
+    float: left;
+}
+#site-nav .sn-quick-menu .sn-home,.sn-login,.sn-logout{
+    width:74px;
+}
+#site-nav .sn-quick-menu .sn-user,.sn-admin{
+    padding: 0 10px;
+}
+.sn-hover:hover{
+    background-color: #f5f5f5;
+}
+/*快速导航菜单中的 写文章*/
+#site-nav .sn-quick-menu .sn-write{
+    width:100px;
+    height: 38px;
+    background-color: #547abb;
+    line-height: 38px;
+    position: relative;
+    top:15px;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 15px;
+    margin: 0 10px;
+}
+#site-nav .sn-quick-menu .sn-write span{
+    font-size: 16px;
+}
+
+/*展示下拉菜单的图标*/
+#site-nav .sn-container .sn-showmenu{
+    float: right;
+    display: none;
+}
+#site-nav .sn-container .sn-showmenu img{
+    width:30px;
+    height:26px;
+    position: relative;
+    top:25px;
+}
+/*标头右侧的除了logo之外的快速导航*/
+#site-nav .sn-container .sn-quick-menu{
+    display: block;
+}
+
+
+
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #site-nav .sn-container{
+        width: 970px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #site-nav .sn-container{
+        width: 750px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #site-nav .sn-container{
+        width: 100%;
+    }
+    /***********************网页上方固定不动的标头**********************/
+    /*盛装标头中各内容的容器*/
+    #site-nav .sn-container{
+        width: 100%;
+    }
+    /*展示下拉菜单的图标*/
+    #site-nav .sn-container .sn-showmenu{
+        display: block;
+        margin-right: 10px;
+
+    }
+    /*标头右侧的除了logo之外的快速导航*/
+    #site-nav .sn-container .sn-quick-menu{
+        width:100%;
+        position: relative;
+        top:15px;
+        border-top:1px #ededed solid;
+        float: right;
+        background-color: #fff;
+        display: none;
+    }
+    #site-nav .sn-quick-menu a{
+        width: 100%;
+        height: 35px;
+        color:#555;
+        font-size: 16px;
+        text-align: left;
+        line-height: 35px;
+    }
+    #site-nav .sn-quick-menu .sn-home{
+        width:100%;
+    }
+    #site-nav .sn-quick-menu .sn-home,.sn-login,.sn-logout{
+        padding-left: 10px;
+    }
+    /*快速导航菜单中的 写文章*/
+    #site-nav .sn-quick-menu .sn-write{
+        width:100%;
+        height: 38px;
+        top:0px;
+        background-color: #fff;
+        color:#555;
+        font-size: 16px;
+        margin: 0;
+        padding-left: 10px;
+    }
+    #site-nav .sn-quick-menu .sn-write:hover{
+        background-color: #f5f5f5;
+    }
+}
