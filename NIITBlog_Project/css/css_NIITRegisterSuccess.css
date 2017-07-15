@@ -7,6 +7,17 @@ body{
     margin:0;
     background-color: #f4f6f8;
 }
+/***********标头修改--begin*******************/
+#site-nav .sn-quick-menu .sn-write img{
+    top:5px;
+}
+/*快速导航菜单中的 写文章*/
+#site-nav .sn-quick-menu .sn-write span{
+    position: relative;
+    top:-5px;
+}
+/***********标头修改--end*******************/
+
 /*******************成功注册容器****************/
 /*先隐藏移动端样式*/
 #registerSuccess_container_mobile{
@@ -34,7 +45,7 @@ body{
     float: left;
     width:80px;
     height:80px;
-    background-image:url(../images/right.png);
+    /*background-image:url(../images/right.png);*/
     background-repeat:no-repeat;
     background-size:cover;
     background-position:bottom;
@@ -89,7 +100,7 @@ body{
     width:270px;
     height:150px;
     float: left;
-    background-image:url(../images/userPic5.jpg);
+    background-image:url(../images/banner.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:bottom;
@@ -98,7 +109,7 @@ body{
     width:270px;
     height:150px;
     float: right;
-    background-image:url(../images/userPic5.jpg);
+    background-image:url(../images/banner03.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:bottom;

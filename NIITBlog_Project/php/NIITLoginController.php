@@ -35,11 +35,11 @@ class NIITLoginController implements INIITController {
             if($pwdResult==1){
                 //$pwdResult=1,用户输入密码与数据库中一致
                 //设置会话变量后跳转到home.html页面
-                $niitloginShowResult=new NIITLoginShowResult();
-                $niitloginShowResult->showSuccessResult();
                 NIITStartSession::starttheSession();
                 $niitloginSetSession=new NIITLoginSetSession();
                 $niitloginSetSession->theniitloginSetSession($name);
+                $niitloginShowResult=new NIITLoginShowResult();
+                $niitloginShowResult->showSuccessResult();
             }else{
                 //$pwdResult=0,用户输入密码与数据库不一致
                 //向用户展示密码错误

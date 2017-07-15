@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>NIITBlog-首页</title>
+    <title>NIITBlog-写博客</title>
     <!--bootstrap-->
     <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <!--css-header-->
     <link rel="stylesheet" href="../css/css_NIITheader.css">
-    <!--css-NIITHome-->
-    <link rel="stylesheet" href="../css/css_NIITHome.css">
+    <!--css-NIITWriteLog-->
+    <link rel="stylesheet" href="../css/css_NIITWriteLog.css">
 </head>
 <body>
 <!--**************************************-->
@@ -34,15 +34,37 @@
     </div>
 </div>
 
+<!--写博客上方的博文标题，博文分类，博文提交-->
+<div id="blogmix-container">
+    <div class="inner-container container">
+        <!--博文标题-->
+        <input class="blog-title form-control" type="text" placeholder="文章标题" maxlength="100">
+        <!--博文提交-->
+        <button class="blog-submit">发表博客</button>
+        <!--博文分类-->
+        <select class="blog-type form-control">
+            <option value="">移动开发</option>
+            <option value="">web前端</option>
+            <option value="">架构设计</option>
+            <option value="">编程语言</option>
+            <option value="">互联网</option>
+            <option value="">数据库</option>
+            <option value="">云计算</option>
+            <option value="">综合</option>
+        </select>
+    </div>
+</div>
 
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
+<!--移动端控制编辑和展示区的按钮-->
+<button id="editor-btn">预览</button>
 
-<div id="bg_test" style="height: 100px;width: 100%;"></div>
+<!--markdown编辑区-->
+<div id="editor">
+    <textarea :value="input" @input="update"></textarea>
+    <div v-html="compiledMarkdown"></div>
+</div>
+
+<!--<div id="bg_test" style="height: 100px;width: 100%;"></div>-->
 
 </body>
 
@@ -52,6 +74,13 @@
 <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 <!--js-header-->
 <script src="../javascript/js_NIITheader.js"></script>
+<!--js-markdown-->
+<script src="../javascript/marked.min.js"></script>
+<script src="../javascript/lodash-4.16.0.js"></script>
+<!--js-Vue-->
+<script src="../javascript/vue.js"></script>
+<!--js-NIITWriteLog-->
+<script src="../javascript/js_NIITWriteLog.js"></script>
 
 
 </html>

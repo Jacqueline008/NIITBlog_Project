@@ -7,6 +7,18 @@ body{
     margin:0;
     background-color: #f4f6f8;
 }
+
+/***********标头修改--begin*******************/
+#site-nav .sn-quick-menu .sn-write img{
+    top:5px;
+}
+/*快速导航菜单中的 写文章*/
+#site-nav .sn-quick-menu .sn-write span{
+    position: relative;
+    top:-5px;
+}
+/***********标头修改--end*******************/
+
 /************************注册表单********************************/
 /*register container*/
 #register_container{

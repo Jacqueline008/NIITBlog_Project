@@ -7,6 +7,17 @@ body{
     margin:0;
     background-color: #f4f6f8;
 }
+/***********标头修改--begin*******************/
+#site-nav .sn-quick-menu .sn-write img{
+    top:5px;
+}
+/*快速导航菜单中的 写文章*/
+#site-nav .sn-quick-menu .sn-write span{
+    position: relative;
+    top:-5px;
+}
+/***********标头修改--end*******************/
+
 /**********************登录容器***********************************/
 #login_container{
     width:1000px;
@@ -20,16 +31,16 @@ body{
     width:650px;
     height:420px;
     float:left;
-    background-image:url(../images/userPic5.jpg);
+    background-image:url(../images/india2.jpg);
     background-position:center;
-    background-size:cover;
+    background-size: cover;
     background-repeat:no-repeat;
 }
 #login_container #login_left h1{
     margin:0px;
-    padding-top:150px;
+    padding-top:280px;
     text-align:center;
-    color:white;
+    color:#fff;
     font-family:'微软雅黑';
     font-size:30px;
 }
@@ -160,7 +171,7 @@ body{
         width:550px;
     }
     #login_container #login_left h1{
-        padding-top:150px;
+        padding-top:280px;
         padding-left: 10px;
         padding-right: 10px;
         font-size:25px;
@@ -180,7 +191,7 @@ body{
         width:350px;
     }
     #login_container #login_left h1{
-        padding-top:140px;
+        padding-top:280px;
         font-size:20px;
     }
     /***************************************************/
