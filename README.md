@@ -9,6 +9,8 @@
 ## 目录
 * [引言](#引言)
     * 网站概述
+* [系统运行截图](#系统运行截图)
+    * 截图持续更新中...
 * [系统分析](#系统分析)
     * 问题陈述
     * 系统用例分析
@@ -23,8 +25,6 @@
       * 博文删除用例
       * 个人信息维护用例
       * 博文管理用例
-* [系统运行截图](#系统运行截图)
-    * 截图持续更新中...
 
 ### 引言
 ****
@@ -33,6 +33,17 @@
 NIIT学生个人博客网站是一个致力于为NIIT注册会员提供博客撰写与博文分享的网站
 该网站提供简洁的界面给用户带来纯粹的知识分享与交流体验
 ```
+
+### 系统运行截图
+***
+#### 注册界面
+<img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.PNG">
+
+#### 登录界面
+
+
+#### 写博客界面
+
 ### 系统分析
 ****
 #### 问题陈述
@@ -243,17 +254,7 @@ NIIT学生个人博客网站是一个致力于为NIIT注册会员提供博客撰
 如果该用例成功，系统的博文会更新。
 ```
 
-### 系统运行截图
-***
-#### 注册界面
-<img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.PNG">
 
-#### 登录界面
-<img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.PNG">
-
-#### 写博客界面
-<img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%86%99%E5%8D%9A%E6%96%87%E9%A1%B5%E9%9D%A2.PNG">
-<img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%86%99%E5%8D%9A%E6%96%87-%E7%A7%BB%E5%8A%A8.PNG" width="180px" height="280px">
 
 
 
