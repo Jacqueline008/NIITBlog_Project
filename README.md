@@ -50,28 +50,40 @@ NIIT学生个人博客网站是一个致力于为NIIT注册会员提供博客撰
 ***
 #### 首页界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E9%A6%96%E9%A1%B5.png?raw=true">
+
 #### 博文界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%8D%9A%E6%96%87%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 博主介绍界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%8D%9A%E4%B8%BB%E4%BB%8B%E7%BB%8D%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 注册界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 登录界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.PNG?raw=true">
+
 #### 博文发表界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%8D%9A%E6%96%87%E5%8F%91%E8%A1%A8%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 发私信界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%8F%91%E7%A7%81%E4%BF%A1%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 个人信息管理界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 博文分类界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%8D%9A%E6%96%87%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 关注管理界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%85%B3%E6%B3%A8%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 私信管理界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E7%A7%81%E4%BF%A1%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 用户管理界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.png?raw=true">
+
 #### 博文管理界面
 <img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E5%8D%9A%E6%96%87%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.png?raw=true">
 
