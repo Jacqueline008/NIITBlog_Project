@@ -36,8 +36,8 @@ NIIT学生个人博客网站是一个致力于为NIIT注册会员提供博客撰
 
 ### 系统运行截图
 ***
-#### 注册界面
-<img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.PNG">
+#### 首页界面
+<img src="https://github.com/Jacqueline008/NIITBlog_Project/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3%E6%89%80%E9%9C%80%E6%96%87%E4%BB%B6/%E9%A6%96%E9%A1%B5.png?raw=true">
 
 #### 登录界面
 
