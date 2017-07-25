@@ -2,7 +2,8 @@
 ****
 ##### 备注:        NIIT印度游学参赛项目
 ##### 作者:        李艺鸣
-##### 项目在线地址: http://182.254.152.14/phpStorm_Project/NIITBlog_Project/html/NIITHome.html (项目持续更新中...)
+##### 项目在线地址: http://182.254.152.14/phpStorm_Project/NIITBlog_Project/html/NIITHome.html 
+##### 项目讲解视频在线观看: http://v.youku.com/v_show/id_XMjkxNzc5ODI4MA==.html?spm=a2hzp.8253869.0.0
 ****
 ## 目录
 * [引言](#引言)
