@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>NIITBlog-私信管理</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <!--css-header-->
+    <link rel="stylesheet" href="../css/css_NIITheader.css">
+    <!--css-footer-->
+    <link rel="stylesheet" href="../css/css_NIITfooter.css">
+    <!--css-NIITLogined_NormalUserMsg-->
+    <link rel="stylesheet" href="../css/css_NIITLogined_NormalUserMsg.css">
+</head>
+<body>
+<!--**************************************-->
+<!--网页上方固定不动的标头-->
+<div id="site-nav">
+    <div class="sn-container">
+        <!--网站logo-->
+        <a href='NIITHome.html' class="sn-logo"><img src="../images/logo.png" alt=""></a>
+        <!--展示下拉菜单的图标-->
+        <a href="#" class="sn-showmenu"><img src="../images/menu1.png" alt=""></a>
+        <!--快速导航菜单-->
+        <div class="sn-quick-menu">
+            <a href="NIITHome.html" class="sn-home sn-hover">首页</a>
+            <a href="NIITLogin.html" class="sn-login sn-hover">登录</a>
+            <a href="NIITLogined_NormalUser.html" class="sn-user sn-hover"></a>
+            <a href="NIITLogined_Admin_All.html" class="sn-admin sn-hover"></a>
+            <a href="#" class="sn-logout sn-hover">退出</a>
+            <a href="#" class="sn-write">
+                <img src="../images/write.png" alt=""><span>写文章</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--所有个人信息容器-->
+<div id="allInfo-container">
+    <!--右侧信息展示-->
+    <div class="Info-Content">
+
+        <!--私信管理总容器-->
+        <div class="msgMg-container">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#beMsg-container" role="tab" data-toggle="tab">我接收的</a></li>
+                <li><a href="#msg-container" role="tab" data-toggle="tab">我发送的</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                <!--我接收的容器-->
+                <div class="tab-pane active" id="beMsg-container">
+                    <!--没有内容时显示的容器-->
+                    <div class="noContent-Container">
+                        <img src="../images/noContent.png">
+                        <span>这里还没有内容呢</span>
+                    </div>
+                    <!--有内容时显示的容器-->
+                    <div class="hasContent-Container">
+                        <!--&lt;!&ndash;每一个列表项&ndash;&gt;-->
+                        <!--<div class="Item">-->
+                            <!--&lt;!&ndash;列表项中上方的混合信息&ndash;&gt;-->
+                            <!--<div class="Item-mix">-->
+                                <!--<img src="../images/userPic.jpg">-->
+                                <!--<span class="Item-name">amy</span>-->
+                                <!--<span class="Item-time">2017-01-01 12:09:09</span>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;列表项下方的私信内容&ndash;&gt;-->
+                            <!--<div class="Item-content">-->
+                                <!--欢迎加入丰富多彩的原创内容社区——简书。有任何疑问（如何投稿，专题主编，签约作者，简叔，简小妹……）-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <!--我发送的容器-->
+                <div class="tab-pane" id="msg-container">
+                    <!--没有内容时显示的容器-->
+                    <div class="noContent-Container">
+                        <img src="../images/noContent.png">
+                        <span>这里还没有内容呢</span>
+                    </div>
+                    <!--有内容时显示的容器-->
+                    <div class="hasContent-Container">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--左侧信息列表-->
+    <div class="Info-List">
+        <a href="NIITLogined_NormalUser.html" class="userInfo"> <img src="../images/userInfo.png">个人信息</a>
+        <a href="NIITLogined_NormalUserBlog.html" class="typedBlog"> <img src="../images/typedBlog.png">博文分类</a>
+        <a href="NIITLogined_NormalUserAttention.html" class="attentionMg"> <img src="../images/attentionMg.png">关注管理</a>
+        <a href="NIITLogined_NormalUserMsg.html" class="msgMg"> <img src="../images/msgMg.png">私信管理</a>
+    </div>
+    <!--左侧信息列表-移动端样式-->
+    <div class="Info-List-mobile">
+        <a href="NIITLogined_NormalUser.html" class="userInfo-mobile"> <img src="../images/userInfo.png">我</a>
+        <a href="NIITLogined_NormalUserBlog.html" class="typedBlog-mobile"> <img src="../images/typedBlog.png">博文</a>
+        <a href="NIITLogined_NormalUserAttention.html" class="attentionMg-mobile"> <img src="../images/attentionMg.png">关注</a>
+        <a href="NIITLogined_NormalUserMsg.html" class="msgMg-mobile"> <img src="../images/msgMg.png">私信</a>
+    </div>
+</div>
+
+<!--模态框-->
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">来自NIITBlog的提示:</h4>
+            </div>
+            <div class="modal-body">
+                模态弹出窗主体内容
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--页尾-->
+<div id="footer">
+    <div class="container">
+        <img src="../images/footer.png">
+        <span>作者:青岛大学2014级开源方向-李艺鸣</span>
+    </div>
+</div>
+
+
+<!--<div id="bg_test" style="height: 100px;width: 100%;"></div>-->
+
+</body>
+
+<!--js-jquery-->
+<script src="../javascript/jquery-2.2.4.min.js"></script>
+<!--bootstrap-->
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<!--js-header-->
+<script src="../javascript/js_NIITheader.js"></script>
+<!--js-NIITLogined_NormalUserMsg-->
+<script src="../javascript/js_NIITLogined_NormalUserMsg.js"></script>
+
+
+</html>

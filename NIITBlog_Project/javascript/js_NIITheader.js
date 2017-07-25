@@ -1,3 +1,13 @@
+$('#mymodal').on('shown.bs.modal', function (e) {
+    // 关键代码，如没将modal设置为 block，则$modala_dialog.height() 为零
+    $(this).css('display', 'block');
+    var modalHeight=$(window).height() / 2 - $('#mymodal .modal-dialog').height() / 2;
+    $(this).find('.modal-dialog').css({
+        'margin-top': modalHeight
+    });
+});
+
+
 //获取标头显示状态
 function getUserStatus() {
     $.ajax({
@@ -28,7 +38,9 @@ function getUserStatus() {
             }
         },
         error:function () {
-            alert("发生错误!");
+            $(".modal-body").html("发生错误!");
+            $("#mymodal").modal("toggle");
+            // alert("发生错误!");
         }
     });
 }
@@ -56,7 +68,9 @@ $(function () {
                     window.location.href="http://localhost/phpStorm_Project/NIITBlog_Project/html/NIITHome.html";
                 },
                 error:function () {
-                    alert("发生错误!");
+                    $(".modal-body").html("发生错误!");
+                    $("#mymodal").modal("toggle");
+                    // alert("发生错误!");
                 }
             });
         }
@@ -66,9 +80,12 @@ $(function () {
     //点击写文章按钮
     $(".sn-write").click(function () {
         if($(".sn-write").attr("name")==undefined){
-            alert("您还未登录,请先登录!");
+            $(".modal-body").html("您还未登录,请先登录!");
+            $("#mymodal").modal("toggle");
+            // alert("您还未登录,请先登录!");
         }else{
             window.location.href="http://localhost/phpStorm_Project/NIITBlog_Project/html/NIITWriteLog.html";
         }
     });
+
 });

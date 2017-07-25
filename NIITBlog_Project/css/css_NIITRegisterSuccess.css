@@ -7,16 +7,7 @@ body{
     margin:0;
     background-color: #f4f6f8;
 }
-/***********标头修改--begin*******************/
-#site-nav .sn-quick-menu .sn-write img{
-    top:5px;
-}
-/*快速导航菜单中的 写文章*/
-#site-nav .sn-quick-menu .sn-write span{
-    position: relative;
-    top:-5px;
-}
-/***********标头修改--end*******************/
+
 
 /*******************成功注册容器****************/
 /*先隐藏移动端样式*/
@@ -94,6 +85,7 @@ body{
     width:600px;
     height:150px;
     margin: 0 auto;
+    margin-top: 80px;
     padding-top: 50px;
 }
 #success_down #picleft{

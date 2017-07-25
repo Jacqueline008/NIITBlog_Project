@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>NIITBlog-首页</title>
+    <title>NIITBlog-管理员用户管理</title>
     <!--bootstrap-->
     <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <!--css-header-->
     <link rel="stylesheet" href="../css/css_NIITheader.css">
+    <!--css-footer-->
+    <link rel="stylesheet" href="../css/css_NIITfooter.css">
     <!--css-NIITLogined_Admin_All-->
-    <link rel="stylesheet" href="../css/css_Logined_Admin_All.css">
+    <link rel="stylesheet" href="../css/css_NIITLogined_Admin_All.css">
 </head>
 <body>
 <!--**************************************-->
@@ -27,22 +29,105 @@
             <a href="NIITLogined_NormalUser.html" class="sn-user sn-hover"></a>
             <a href="NIITLogined_Admin_All.html" class="sn-admin sn-hover"></a>
             <a href="#" class="sn-logout sn-hover">退出</a>
-            <a href="NIITWriteLog.html" class="sn-write">
+            <a href="#" class="sn-write">
                 <img src="../images/write.png" alt=""><span>写文章</span>
             </a>
         </div>
     </div>
 </div>
 
+<!--所有管理员管理信息容器-->
+<div id="allInfo-container">
+    <!--右侧信息展示-->
+    <div class="Info-Content">
 
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
+        <!--用户管理总容器-->
+        <div class="userMg-container">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#allUser-container" role="tab" data-toggle="tab">全部用户</a></li>
+                <li><a href="#theUser-container" role="tab" data-toggle="tab">用户筛选</a></li>
+            </ul>
 
-<div id="bg_test" style="height: 100px;width: 100%;"></div>
+            <div class="tab-content">
+
+                <!--全部用户容器-->
+                <div class="tab-pane active" id="allUser-container">
+                    <!--有内容时显示的容器-->
+                    <div class="hasContent-Container">
+                        <!--&lt;!&ndash;每一个用户列表项&ndash;&gt;-->
+                        <!--<div class="UserItem">-->
+                            <!--<img src="../images/userPic.jpg" name="amy">-->
+                            <!--<span name="amy">amy</span>-->
+                            <!--<button name="amy">删除</button>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <!--用户筛选容器-->
+                <div class="tab-pane" id="theUser-container">
+                    <!--搜索容器-->
+                    <div class="search-container">
+                        <input type="text" placeholder="请输入您想要查询的用户">
+                        <button>搜索</button>
+                    </div>
+                    <!--没有内容时显示的容器-->
+                    <div class="noContent-Container">
+                        <img src="../images/noContent.png">
+                        <span>没有搜索到指定用户</span>
+                    </div>
+                    <!--有内容时显示的容器-->
+                    <div class="hasContent-Container">
+                        <!--&lt;!&ndash;每一个用户列表项&ndash;&gt;-->
+                        <!--<div class="UserItem">-->
+                            <!--<img src="../images/userPic.jpg" name="amy">-->
+                            <!--<span name="amy">amy</span>-->
+                            <!--<button name="amy">删除</button>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--左侧信息列表-->
+    <div class="Info-List">
+        <a href="NIITLogined_Admin_All.html" class="userMg"> <img src="../images/admin_userMg.png">用户管理</a>
+        <a href="NIITLogined_Admin_AllBlog.html" class="blogMg"> <img src="../images/user_blogMg.png">博文管理</a>
+    </div>
+    <!--左侧信息列表-移动端样式-->
+    <div class="Info-List-mobile">
+        <a href="NIITLogined_Admin_All.html" class="userMg-mobile"> <img src="../images/admin_userMg.png">用户管理</a>
+        <a href="NIITLogined_Admin_AllBlog.html" class="blogMg-mobile"> <img src="../images/user_blogMg.png">博文管理</a>
+    </div>
+</div>
+
+<!--模态框-->
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">来自NIITBlog的提示:</h4>
+            </div>
+            <div class="modal-body">
+                模态弹出窗主体内容
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--页尾-->
+<div id="footer">
+    <div class="container">
+        <img src="../images/footer.png">
+        <span>作者:青岛大学2014级开源方向-李艺鸣</span>
+    </div>
+</div>
+
+<!--<div id="bg_test" style="height: 100px;width: 100%;"></div>-->
 
 </body>
 
@@ -52,6 +137,8 @@
 <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 <!--js-header-->
 <script src="../javascript/js_NIITheader.js"></script>
+<!--js-NIITLogined_Admin_All-->
+<script src="../javascript/js_NIITLogined_Admin_All.js"></script>
 
 
 </html>

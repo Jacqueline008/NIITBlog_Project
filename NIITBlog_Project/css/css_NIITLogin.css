@@ -7,16 +7,7 @@ body{
     margin:0;
     background-color: #f4f6f8;
 }
-/***********标头修改--begin*******************/
-#site-nav .sn-quick-menu .sn-write img{
-    top:5px;
-}
-/*快速导航菜单中的 写文章*/
-#site-nav .sn-quick-menu .sn-write span{
-    position: relative;
-    top:-5px;
-}
-/***********标头修改--end*******************/
+
 
 /**********************登录容器***********************************/
 #login_container{
@@ -90,7 +81,7 @@ body{
     border:1px solid blue;
 }
 #logincontent #login_user #loginuser{
-    width:250px;
+    width:249px;
     height:45px;
     position:relative;
     left:50px;
@@ -115,7 +106,7 @@ body{
     border:1px solid blue;
 }
 #logincontent #login_pwd #loginpwd{
-    width:250px;
+    width:249px;
     height:45px;
     position:relative;
     left:50px;

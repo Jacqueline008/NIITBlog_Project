@@ -7,16 +7,7 @@ body{
     margin:0;
     background-color: #f4f6f8;
 }
-/***********标头修改--begin*******************/
-#site-nav .sn-quick-menu .sn-write img{
-    top:5px;
-}
-/*快速导航菜单中的 写文章*/
-#site-nav .sn-quick-menu .sn-write span{
-    position: relative;
-    top:-5px;
-}
-/***********标头修改--end*******************/
+
 
 /***************注册失败容器**********************/
 /*注册失败container*/
@@ -24,7 +15,7 @@ body{
     width:70%;
     height: 450px;
     background-color:#FDFDFD;
-    margin: 0px auto;
+    margin: 0 auto;
     position: relative;
     top:120px;
     box-shadow: -10px 10px 10px #CCCCCC;
@@ -131,6 +122,11 @@ body{
     }
     #fail_right_down{
         font-size: 16px;
+    }
+
+    /*页尾*/
+    #footer{
+        top:150px;
     }
 
 }

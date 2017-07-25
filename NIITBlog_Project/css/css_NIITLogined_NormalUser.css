@@ -5,10 +5,213 @@
 }
 body{
     margin:0;
-    background-color: #f4f6f8;
+    /*background-color: #f4f6f8;*/
+    color:#333;
+    font-family: '微软雅黑';
 }
 
+/***************************所有个人信息容器 begin**************************/
+#allInfo-container{
+    width:970px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top:120px;
+    overflow: hidden;
+}
+/*****************右侧信息展示*************/
+/*右侧信息展示(模板)*/
+.Info-Content{
+    /*background-color: cadetblue;*/
+    width: 770px;
+    float: right;
+    min-height: 500px;
+}
 
+/*右侧信息展示(自定义)*/
+
+/****右侧信息中的用户头像区域  begin*/
+.userInfo-picContainer{
+    width:500px;
+    height: 100px;
+    /*background-color: pink;*/
+    margin: 0 auto;
+}
+/*用户头像展示*/
+.userInfo-oldpic{
+    width:100px;
+    height: 100px;
+    float:left;
+}
+.userInfo-oldpic img{
+    width:100px;
+    height: 100px;
+    border-radius:50px;
+}
+/*用户新头像提交表单*/
+.userInfo-newpic{
+    width:400px;
+    height: 100px;
+    float: left;
+    /*background-color: cadetblue;*/
+}
+/*上传图片的外观容器*/
+.newpic-uploadcontainer{
+    width:90px;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    top:30px;
+    left: 70px;
+    background-color: #949494;
+}
+.newpic-uploadcontainer:hover{
+    background-color: lightgrey;
+}
+/*上传头像input*/
+.newpic-upload{
+    position: relative;
+    top:-30px;
+    width:80px;
+    opacity: 0;
+}
+/*保存头像按钮*/
+.newpic-uploadsubmit{
+    width:90px;
+    height: 30px;
+    font-size: 15px;
+    background-color:#547abb;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    top:0px;
+    left: 220px;
+    border:none;
+}
+.newpic-uploadsubmit:hover{
+    background-color: lightsteelblue;
+}
+/****右侧信息中的用户头像区域  end*/
+
+/****右侧信息中的用户文字区域 begin***/
+/*文字表单*/
+.userInfo-textContainer{
+    width:500px;
+    margin: 0 auto;
+    font-size: 15px;
+    /*background-color: pink;*/
+}
+.theUserName,.theUserTel,.theUserDes,.userInfo-textsubmit{
+    width:100%;
+}
+/*用户名+绑定手机*/
+.theUserName,.theUserTel{
+    line-height: 70px;
+    padding-left: 20px;
+    height: 70px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.theUserName input,.theUserTel input{
+    width: 240px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+    text-align: center;
+    margin-left:90px;
+}
+.theUserTel input{
+    margin-left:85px;
+}
+/*个人描述*/
+.theUserDes{
+    padding-left: 20px;
+    height: 120px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.theUserDes span{
+    position: relative;
+    top:-40px;
+}
+.theUserDes textarea{
+    width: 240px;
+    height: 90px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    resize: none;
+    color:#555;
+    padding: 10px;
+    background-color: #fdfdfd;
+    margin-left: 85px;
+    position: relative;
+    top:15px;
+}
+/*保存修改*/
+.userInfo-textsubmit{
+    height:70px;
+    line-height: 70px;
+}
+.userInfo-textsubmit input{
+    width:240px;
+    height: 30px;
+    font-size: 15px;
+    background-color:#ef7662;
+    color:#fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    left:170px;
+    border:none;
+}
+.userInfo-textsubmit input:hover{
+    background-color: #547abb;
+}
+/****右侧信息中的用户文字区域 end***/
+
+/******************左侧信息展示*************/
+/*先隐藏为移动端设置的左侧信息列表样式*/
+.Info-List-mobile{
+    display: none;
+}
+/*左侧信息列表*/
+.Info-List{
+    display: block;
+    width: 200px;
+    float: right;
+    background-color:#fff;
+    height: 200px;
+}
+.Info-List a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-size:15px;
+    color:#2f2f2f;
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+/*个人信息管理页面中个人信息列表项*/
+.userInfo{
+    background-color: #f0f0f0;
+}
+.Info-List a:hover{
+    background-color: #f0f0f0;
+}
+.Info-List a img{
+    width:30px;
+    height: 30px;
+    margin-right: 20px;
+}
+/***************************所有个人信息容器 end**************************/
 
 /*媒体查询*/
 @media only screen and (max-width: 1200px) {
@@ -20,12 +223,183 @@ body{
     #bg_test{
         background-color: pink;
     }
-
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:750px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 550px;
+    }
+    /******************左侧信息展示*************/
+    /*左侧信息列表*/
+    .Info-List{
+        width: 200px;
+    }
+    /***************************所有个人信息容器 end**************************/
 
 }
 @media only screen and (max-width: 768px) {
     #bg_test{
         background-color: blue;
     }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:100%;
+        top:80px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 100%;
+    }
+    /*右侧信息展示(自定义)*/
 
+    /****右侧信息中的用户头像区域  begin*/
+    .userInfo-picContainer{
+        width:340px;
+        height: 70px;
+        left:0px;
+        margin:0 auto;
+    }
+    /*用户头像展示*/
+    .userInfo-oldpic{
+        width:70px;
+        height: 70px;
+        position: relative;
+        left:0px;
+    }
+    .userInfo-oldpic img{
+        width:70px;
+        height: 70px;
+        border-radius:35px;
+    }
+    /*用户新头像提交表单*/
+    .userInfo-newpic{
+        width:230px;
+        height: 70px;
+        /*background-color: cadetblue;*/
+    }
+    /*上传图片的外观容器*/
+    .newpic-uploadcontainer{
+        width:80px;
+        height: 30px;
+        font-size: 14px;
+        top:20px;
+        left: 40px;
+    }
+    /*保存头像按钮*/
+    .newpic-uploadsubmit{
+        width:80px;
+        height: 30px;
+        font-size: 14px;
+        top:-10px;
+        left: 180px;
+    }
+    .newpic-uploadsubmit:hover{
+        background-color: rgba(59,194,29,.05);
+    }
+    /****右侧信息中的用户头像区域  end*/
+
+    /****右侧信息中的用户文字区域 begin***/
+    /*文字表单*/
+    .userInfo-textContainer{
+        width:340px;
+    }
+    .theUserName,.theUserTel,.theUserDes,.userInfo-textsubmit{
+        width:100%;
+    }
+    /*用户名+绑定手机*/
+    .theUserName,.theUserTel{
+        line-height: 60px;
+        padding-left: 10px;
+        height: 60px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .theUserName input,.theUserTel input{
+        display: block;
+        line-height: 30px;
+        width: 220px;
+        height: 30px;
+        font-size: 15px;
+        border: 1px solid #c8c8c8;
+        border-radius: 4px;
+        background-color: hsla(0,0%,71%,.1);
+        text-align: center;
+        margin-left:100px;
+        position: relative;
+        top:-45px;
+    }
+    .theUserTel input{
+        margin-left:100px;
+    }
+    /*个人描述*/
+    .theUserDes{
+        padding-left: 10px;
+        height: 120px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .theUserDes span{
+        position: relative;
+        top:30px;
+    }
+    .theUserDes textarea{
+        width: 220px;
+        height: 90px;
+        margin-left: 100px;
+        position: relative;
+        top:-5px;
+    }
+    /*保存修改*/
+    .userInfo-textsubmit{
+        height:70px;
+        line-height: 70px;
+    }
+    .userInfo-textsubmit input{
+        width:220px;
+        left:110px;
+    }
+    /****右侧信息中的用户文字区域 end***/
+
+    /******************左侧信息展示*************/
+    /*隐藏为大屏设置的左侧信息列表样式*/
+    .Info-List{
+        display: none;
+    }
+    .Info-List-mobile{
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index:1000;
+        background-color: #fff;
+        border-top: 1px solid #f0f0f0;
+    }
+    .Info-List-mobile a{
+        display: block;
+        width: 25%;
+        height: 50px;
+        float: left;
+        text-decoration: none;
+        font-size:12px;
+        color:#2f2f2f;
+        text-align: center;
+    }
+    .Info-List-mobile a:hover{
+        background-color: #f0f0f0;
+    }
+    .Info-List-mobile a img{
+        display: block;
+        margin: 0 auto;
+        width:30px;
+        height: 30px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+    /*页尾*/
+    #footer{
+        display: none;
+    }
 }

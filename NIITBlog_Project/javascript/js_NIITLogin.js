@@ -16,7 +16,9 @@ $(function () {
                 $("#error_message").html(data);
             },
             error:function () {
-                alert("发生错误!");
+                // alert("发生错误!");
+                $(".modal-body").html("发生错误!");
+                $("#mymodal").modal("toggle");
             }
         });
     });

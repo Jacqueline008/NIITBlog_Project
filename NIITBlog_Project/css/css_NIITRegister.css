@@ -8,16 +8,6 @@ body{
     background-color: #f4f6f8;
 }
 
-/***********标头修改--begin*******************/
-#site-nav .sn-quick-menu .sn-write img{
-    top:5px;
-}
-/*快速导航菜单中的 写文章*/
-#site-nav .sn-quick-menu .sn-write span{
-    position: relative;
-    top:-5px;
-}
-/***********标头修改--end*******************/
 
 /************************注册表单********************************/
 /*register container*/
@@ -63,7 +53,7 @@ body{
     color:#547abb;
 }
 #register_user #registeruser{
-    width:295px;
+    width:265px;
     height:46px;
     outline:none;
     font-size:16px;
@@ -78,6 +68,7 @@ body{
     font-size:13px;
     color:#ef7662;
     margin:0 auto;
+    padding-left: 10px;
 }
 /*密码*/
 #registercontent #register_pwd{
@@ -97,7 +88,7 @@ body{
     color:#547abb;
 }
 #register_pwd #registerpwd{
-    width:250px;
+    width:230px;
     height:46px;
     outline:none;
     font-size:16px;
@@ -124,7 +115,7 @@ body{
     color:#547abb;
 }
 #register_pwdagain #registerpwdagain{
-    width:295px;
+    width:265px;
     height:46px;
     outline:none;
     font-size:16px;
@@ -141,6 +132,7 @@ body{
     font-size:13px;
     color:#ef7662;
     margin:0 auto;
+    padding-left: 10px;
 }
 /*电话号码*/
 #registercontent #register_tel{
@@ -160,7 +152,7 @@ body{
     color:#547abb;
 }
 #register_tel #registertel{
-    width:285px;
+    width:275px;
     height:46px;
     outline:none;
     font-size:16px;
@@ -177,10 +169,11 @@ body{
     font-size:13px;
     color:#ef7662;
     margin:0 auto;
+    padding-left: 10px;
 }
 /*同意协议*/
 #registercontent #register_agree{
-    width:405px;
+    width:375px;
     height:30px;
     margin:40px auto;
     margin-top:10px;
@@ -195,7 +188,7 @@ body{
 /*注册*/
 #registercontent #registersubmit{
     display:block;
-    width:400px;
+    width:380px;
     height:50px;
     margin:0 auto;
     border:none;

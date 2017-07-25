@@ -1,0 +1,335 @@
+#bg_test{
+    position: relative;
+    top:150px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    /*background-color: #f4f6f8;*/
+    color:#333;
+    font-family: '微软雅黑';
+}
+
+/***************************所有个人信息容器 begin**************************/
+#allInfo-container{
+    width:970px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top:120px;
+    overflow: hidden;
+}
+/*****************右侧信息展示*************/
+/*右侧信息展示(模板)*/
+.Info-Content{
+    /*background-color: cadetblue;*/
+    width: 770px;
+    float: right;
+}
+
+/*右侧信息展示(自定义)*/
+/************************关注管理总容器 begin************************/
+.attentionMg-container{
+    width:500px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.nav-tabs > li > a {
+    background-color: #f4f6f8;
+    width:245px;
+    text-align: center;
+    border-radius: 0px;
+    font-size:15px;
+    color:#2f2f2f;
+}
+/*我关注的，关注我的中没有内容时显示的区域*/
+.noContent-Container{
+    width:100%;
+    height: 300px;
+    display: none;
+    min-height: 500px;
+}
+.noContent-Container img{
+    width:100px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top:80px;
+}
+.noContent-Container span{
+    font-size:15px;
+    color:#2f2f2f;
+    display: block;
+    margin: 0 auto;
+    width:120px;
+    position: relative;
+    top:100px;
+}
+/*我关注的，关注我的中有内容时显示的区域*/
+.hasContent-Container{
+    min-height: 500px;
+    display: none;
+}
+
+/*我关注的总容器 begin**********/
+.Attention-container{
+    width:100%;
+}
+/*每一个我关注的列表项*/
+.AttentionItem{
+    width:100%;
+    height: 70px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #f0f0f0;
+}
+/*我关注的列表项中的头像*/
+.AttentionItem img{
+    width:50px;
+    height: 50px;
+    border-radius:25px;
+    margin-left: 95px;
+}
+/*我关注的列表项中的用户名*/
+.AttentionItem span{
+    margin-left: 100px;
+    font-size: 18px;
+}
+.AttentionItem span:hover{
+    color:#547abb;
+    text-decoration: underline;
+}
+/*我关注的列表项中的取消关注按钮*/
+.AttentionItem button{
+    width:70px;
+    height: 28px;
+    background-color: #949494;
+    line-height: 28px;
+    font-size: 13px;
+    position: relative;
+    top:10px;
+    right:10px;
+    border-radius: 4px;
+    color:#fff;
+    border:none;
+    float: right;
+}
+.AttentionItem button:hover{
+    background-color:#547abb;
+}
+/*我关注的总容器 begin*************/
+
+/*关注我的总容器 begin*************/
+.beAttention-container{
+    width:100%;
+}
+/*每一个关注我的列表项*/
+.beAttentionItem{
+    width:100%;
+    height: 70px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #f0f0f0;
+}
+/*关注我的列表项中的头像*/
+.beAttentionItem img{
+    width:50px;
+    height: 50px;
+    border-radius:25px;
+    margin-left: 95px;
+}
+/*关注我的列表项中的用户名*/
+.beAttentionItem span{
+    margin-left: 190px;
+    font-size: 18px;
+}
+.beAttentionItem span:hover{
+    color:#547abb;
+    text-decoration: underline;
+}
+/*关注我的总容器 end***************/
+/************************关注管理总容器 end************************/
+
+/******************左侧信息展示*************/
+/*先隐藏为移动端设置的左侧信息列表样式*/
+.Info-List-mobile{
+    display: none;
+}
+/*左侧信息列表*/
+.Info-List{
+    display: block;
+    width: 200px;
+    float: right;
+    background-color:#fff;
+    height: 200px;
+}
+.Info-List a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-size:15px;
+    color:#2f2f2f;
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+/*个人信息管理页面中关注管理列表项*/
+.attentionMg{
+    background-color: #f0f0f0;
+}
+.Info-List a:hover{
+    background-color: #f0f0f0;
+}
+.Info-List a img{
+    width:30px;
+    height: 30px;
+    margin-right: 20px;
+}
+/***************************所有个人信息容器 end**************************/
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:750px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 550px;
+    }
+    /******************左侧信息展示*************/
+    /*左侧信息列表*/
+    .Info-List{
+        width: 200px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:100%;
+        top:80px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 100%;
+    }
+    /*右侧信息展示(自定义)*/
+    /************************关注管理总容器 begin************************/
+    .attentionMg-container{
+        width:350px;
+    }
+    .nav-tabs > li > a {
+        width:173px;
+    }
+    .hasContent-Container{
+        min-height: 350px;
+    }
+    /*我关注的，关注我的中没有内容时显示的区域*/
+    .noContent-Container{
+        width:100%;
+        height: 300px;
+        min-height: 350px;
+    }
+
+    /*我关注的总容器 begin**********/
+    .Attention-container{
+        width:100%;
+    }
+    /*每一个我关注的列表项*/
+    .AttentionItem{
+        height: 60px;
+        padding: 5px 0;
+    }
+    /*我关注的列表项中的头像*/
+    .AttentionItem img{
+        margin-left: 15px;
+    }
+    /*我关注的列表项中的用户名*/
+    .AttentionItem span{
+        margin-left: 60px;
+    }
+    /*我关注的列表项中的取消关注按钮*/
+    .AttentionItem button{
+        width:60px;
+        font-size: 10px;
+        top:10px;
+        right:15px;
+    }
+    /*我关注的总容器 begin*************/
+
+    /*关注我的总容器 begin*************/
+    .beAttention-container{
+        width:100%;
+    }
+    /*每一个关注我的列表项*/
+    .beAttentionItem{
+        height: 60px;
+        padding: 5px 0;
+    }
+    /*关注我的列表项中的头像*/
+    .beAttentionItem img{
+        height: 50px;
+        margin-left: 65px;
+    }
+    /*关注我的列表项中的用户名*/
+    .beAttentionItem span{
+        margin-left: 110px;
+    }
+    /*关注我的总容器 end***************/
+    /************************关注管理总容器 end************************/
+
+    /******************左侧信息展示*************/
+    /*隐藏为大屏设置的左侧信息列表样式*/
+    .Info-List{
+        display: none;
+    }
+    .Info-List-mobile{
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index:1000;
+        background-color: #fff;
+        border-top: 1px solid #f0f0f0;
+    }
+    .Info-List-mobile a{
+        display: block;
+        width: 25%;
+        height: 50px;
+        float: left;
+        text-decoration: none;
+        font-size:12px;
+        color:#2f2f2f;
+        text-align: center;
+    }
+    .Info-List-mobile a:hover{
+        background-color: #f0f0f0;
+    }
+    .Info-List-mobile a img{
+        display: block;
+        margin: 0 auto;
+        width:30px;
+        height: 30px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+    /*页尾*/
+    #footer{
+        display: none;
+    }
+}

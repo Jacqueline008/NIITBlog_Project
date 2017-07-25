@@ -27,7 +27,7 @@
             <a href="NIITLogined_NormalUser.html" class="sn-user sn-hover"></a>
             <a href="NIITLogined_Admin_All.html" class="sn-admin sn-hover"></a>
             <a href="#" class="sn-logout sn-hover">退出</a>
-            <a href="NIITWriteLog.html" class="sn-write">
+            <a href="#" class="sn-write">
                 <img src="../images/write.png" alt=""><span>写文章</span>
             </a>
         </div>
@@ -43,14 +43,10 @@
         <button class="blog-submit">发表博客</button>
         <!--博文分类-->
         <select class="blog-type form-control">
-            <option value="">移动开发</option>
-            <option value="">web前端</option>
-            <option value="">架构设计</option>
-            <option value="">编程语言</option>
-            <option value="">互联网</option>
-            <option value="">数据库</option>
-            <option value="">云计算</option>
-            <option value="">综合</option>
+            <option value="1">移动开发</option>
+            <option value="2">web前端</option>
+            <option value="3">架构设计</option>
+            <option value="4">综合</option>
         </select>
     </div>
 </div>
@@ -64,6 +60,23 @@
     <div v-html="compiledMarkdown"></div>
 </div>
 
+<!--模态框-->
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">来自NIITBlog的提示:</h4>
+            </div>
+            <div class="modal-body">
+                模态弹出窗主体内容
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!--<div id="bg_test" style="height: 100px;width: 100%;"></div>-->
 
 </body>

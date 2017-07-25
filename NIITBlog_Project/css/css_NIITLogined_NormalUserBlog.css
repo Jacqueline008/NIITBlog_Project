@@ -1,0 +1,305 @@
+#bg_test{
+    position: relative;
+    top:150px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    /*background-color: #f4f6f8;*/
+    color:#333;
+    font-family: '微软雅黑';
+}
+
+/***************************所有个人信息容器 begin**************************/
+#allInfo-container{
+    width:970px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top:120px;
+    overflow: hidden;
+}
+/*****************右侧信息展示*************/
+/*右侧信息展示(模板)*/
+.Info-Content{
+    /*background-color: cadetblue;*/
+    width: 770px;
+    float: right;
+}
+
+/*右侧信息展示(自定义)*/
+/****************************博文分类总容器 begin*****************/
+.typedBlog-container{
+    width:500px;
+    margin: 0 auto;
+}
+.nav-tabs > li > a {
+    background-color: #f4f6f8;
+    width:123px;
+    text-align: center;
+    border-radius: 0px;
+    font-size:15px;
+    color:#2f2f2f;
+}
+
+/*四个容器中没有内容时显示的div*/
+.noContent-Container{
+    width:100%;
+    height: 300px;
+    display: none;
+    min-height: 500px;
+}
+.noContent-Container img{
+    width:100px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top:80px;
+}
+.noContent-Container span{
+    font-size:15px;
+    color:#2f2f2f;
+    display: block;
+    margin: 0 auto;
+    width:120px;
+    position: relative;
+    top:100px;
+}
+
+
+/****四个容器中有内容时显示的div begin****/
+.hasContent-Container{
+    display: none;
+    min-height: 500px;
+}
+/*博文列表项*/
+.hasblog-item{
+    width: 500px;
+    height: 80px;
+    border-bottom: 1px dashed #f0f0f0;
+    font-size:15px;
+    color:#2f2f2f;
+}
+/*博文列表项的左侧部分*/
+.hasblog-itemleft{
+    width:375px;
+    height: 80px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+/*博文列表项的左侧部分中的博文标题*/
+.hasblog-title{
+    color:#547abb;
+}
+.hasblog-title:hover{
+    color:#555;
+}
+/*博文列表项的左侧部分中的创建时间*/
+.hasblog-createTime{
+    font-size:13px;
+    color:#969696;
+}
+/*博文列表项的右侧部分*/
+.hasblog-itemright{
+    width:125px;
+    height: 80px;
+    float: left;
+}
+/*博文列表项的右侧部分中的删除按钮*/
+.hasblog-delete{
+    width:70px;
+    height: 28px;
+    background-color: #949494;
+    line-height: 28px;
+    position: relative;
+    top:25px;
+    left:30px;
+    border-radius: 4px;
+    color:#fff;
+    border:none;
+}
+.hasblog-delete:hover{
+    background-color:#547abb;
+}
+/****四个容器中有内容时显示的div end****/
+
+/****************************博文分类总容器 end*****************/
+
+
+/******************左侧信息展示*************/
+/*先隐藏为移动端设置的左侧信息列表样式*/
+.Info-List-mobile{
+    display: none;
+}
+/*左侧信息列表*/
+.Info-List{
+    display: block;
+    width: 200px;
+    float: right;
+    background-color:#fff;
+    height: 200px;
+}
+.Info-List a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-size:15px;
+    color:#2f2f2f;
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+/*个人信息管理页面中分类博文列表项*/
+.typedBlog{
+    background-color: #f0f0f0;
+}
+.Info-List a:hover{
+    background-color: #f0f0f0;
+}
+.Info-List a img{
+    width:30px;
+    height: 30px;
+    margin-right: 20px;
+}
+/***************************所有个人信息容器 end**************************/
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:750px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 550px;
+    }
+    /******************左侧信息展示*************/
+    /*左侧信息列表*/
+    .Info-List{
+        width: 200px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:100%;
+        top:80px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 100%;
+    }
+
+    /*右侧信息展示(自定义)*/
+    /****************************博文分类总容器 begin*****************/
+    .typedBlog-container{
+        width:350px;
+    }
+    .nav-tabs > li > a {
+        width:85px;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        font-size:12px;
+    }
+    /*四个容器中没有内容时显示的div*/
+    .noContent-Container{
+        min-height: 350px;
+    }
+    /****四个容器中有内容时显示的div begin****/
+    .hasContent-Container{
+        min-height: 350px;
+    }
+    /*博文列表项*/
+    .hasblog-item{
+        width: 350px;
+        height: 60px;
+        border-bottom: 1px dashed #f0f0f0;
+        font-size:15px;
+        color:#2f2f2f;
+    }
+    /*博文列表项的左侧部分*/
+    .hasblog-itemleft{
+        width:265px;
+        height: 60px;
+        float: left;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    /*博文列表项的右侧部分*/
+    .hasblog-itemright{
+        width:85px;
+        height: 60px;
+        float: left;
+    }
+    /*博文列表项的右侧部分中的删除按钮*/
+    .hasblog-delete{
+        width:50px;
+        height: 28px;
+        line-height: 28px;
+        top:15px;
+        left:15px;
+        font-size: 13px;
+    }
+    /****四个容器中有内容时显示的div end****/
+
+    /****************************博文分类总容器 end*****************/
+
+    /******************左侧信息展示*************/
+    /*隐藏为大屏设置的左侧信息列表样式*/
+    .Info-List{
+        display: none;
+    }
+    .Info-List-mobile{
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index:1000;
+        background-color: #fff;
+        border-top: 1px solid #f0f0f0;
+    }
+    .Info-List-mobile a{
+        display: block;
+        width: 25%;
+        height: 50px;
+        float: left;
+        text-decoration: none;
+        font-size:12px;
+        color:#2f2f2f;
+        text-align: center;
+    }
+    .Info-List-mobile a:hover{
+        background-color: #f0f0f0;
+    }
+    .Info-List-mobile a img{
+        display: block;
+        margin: 0 auto;
+        width:30px;
+        height: 30px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+    /*页尾*/
+    #footer{
+        display: none;
+    }
+}

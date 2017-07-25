@@ -1,0 +1,299 @@
+#bg_test{
+    position: relative;
+    top:150px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    /*background-color: #f4f6f8;*/
+    color:#333;
+    font-family: '微软雅黑';
+}
+
+/***************************所有个人信息容器 begin**************************/
+#allInfo-container{
+    width:970px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top:120px;
+    overflow: hidden;
+}
+/*****************右侧信息展示*************/
+/*右侧信息展示(模板)*/
+.Info-Content{
+    width: 770px;
+    float: right;
+}
+
+/*右侧信息展示(自定义)*/
+/************************私信管理总容器 begin************************/
+.msgMg-container{
+    width:500px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.nav-tabs > li > a {
+    background-color: #f4f6f8;
+    width:245px;
+    text-align: center;
+    border-radius: 0px;
+    font-size:15px;
+    color:#2f2f2f;
+}
+/*我接收的，我发送的中没有内容时显示的区域*/
+.noContent-Container{
+    width:100%;
+    height: 300px;
+    display: none;
+    min-height: 500px;
+}
+.noContent-Container img{
+    width:100px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top:80px;
+}
+.noContent-Container span{
+    font-size:15px;
+    color:#2f2f2f;
+    display: block;
+    margin: 0 auto;
+    width:120px;
+    position: relative;
+    top:100px;
+}
+/*我接收的，我发送的中有内容时显示的区域*/
+.hasContent-Container{
+    width:100%;
+    min-height: 500px;
+    background-color: #fff;
+    display: none;
+}
+/****每一个列表项 begin****/
+.Item{
+    width:100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 20px;
+}
+/*列表项上方的混合信息*/
+.Item-mix{
+    padding: 10px 0;
+}
+/*混合信息中的头像*/
+.Item img{
+    width:50px;
+    height: 50px;
+    border-radius:25px;
+    margin-left: 20px;
+}
+/*混合信息中的名字*/
+.Item-name{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.Item-name:hover{
+    text-decoration: underline;
+    color:#547abb;
+}
+/*混合信息中的时间*/
+.Item-time{
+    color: #9b9b9b;
+    font-size: 12px;
+    margin-left: 10px;
+}
+/*列表项下方的私信内容*/
+.Item-content{
+    width: 460px;
+    margin: 0 auto;
+    background-color: #e7f1fc;
+    border-color: #bad0e9;
+    border-radius: 8px;
+    padding: 15px;
+}
+/****每一个列表项 end****/
+/************************私信管理总容器 end************************/
+
+
+/******************左侧信息展示*************/
+/*先隐藏为移动端设置的左侧信息列表样式*/
+.Info-List-mobile{
+    display: none;
+}
+/*左侧信息列表*/
+.Info-List{
+    display: block;
+    width: 200px;
+    float: right;
+    background-color:#fff;
+    height: 200px;
+}
+.Info-List a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-size:15px;
+    color:#2f2f2f;
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+/*个人信息管理页面中私信管理列表项*/
+.msgMg{
+    background-color: #f0f0f0;
+}
+.Info-List a:hover{
+    background-color: #f0f0f0;
+}
+.Info-List a img{
+    width:30px;
+    height: 30px;
+    margin-right: 20px;
+}
+/***************************所有个人信息容器 end**************************/
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:750px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 550px;
+    }
+    /******************左侧信息展示*************/
+    /*左侧信息列表*/
+    .Info-List{
+        width: 200px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:100%;
+        top:80px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 100%;
+    }
+    /*右侧信息展示(自定义)*/
+    /************************私信管理总容器 begin************************/
+    .msgMg-container{
+        width:350px;
+    }
+    .nav-tabs > li > a {
+        width:173px;
+    }
+    /*我接收的，我发送的中没有内容时显示的区域*/
+    .noContent-Container{
+        width:100%;
+        min-height: 350px;
+    }
+    /*我接收的，我发送的中有内容时显示的区域*/
+    .hasContent-Container{
+        min-height: 350px;
+    }
+    /****每一个列表项 begin****/
+    .Item{
+        width:100%;
+        background-color: #fff;
+        border-bottom: 1px solid #ededed;
+        padding-bottom: 20px;
+    }
+    /*列表项上方的混合信息*/
+    .Item-mix{
+        padding: 10px 0;
+    }
+    /*混合信息中的头像*/
+    .Item img{
+        width:50px;
+        height: 50px;
+        border-radius:25px;
+        margin-left: 20px;
+    }
+    /*混合信息中的名字*/
+    .Item-name{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    /*混合信息中的时间*/
+    .Item-time{
+        color: #9b9b9b;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    /*列表项下方的私信内容*/
+    .Item-content{
+        width: 300px;
+        margin: 0 auto;
+        background-color: #e7f1fc;
+        border-color: #bad0e9;
+        border-radius: 8px;
+        padding: 15px;
+    }
+    /****每一个列表项 end****/
+    /************************私信管理总容器 end************************/
+
+
+
+    /******************左侧信息展示*************/
+    /*隐藏为大屏设置的左侧信息列表样式*/
+    .Info-List{
+        display: none;
+    }
+    .Info-List-mobile{
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index:1000;
+        background-color: #fff;
+        border-top: 1px solid #f0f0f0;
+    }
+    .Info-List-mobile a{
+        display: block;
+        width: 25%;
+        height: 50px;
+        float: left;
+        text-decoration: none;
+        font-size:12px;
+        color:#2f2f2f;
+        text-align: center;
+    }
+    .Info-List-mobile a:hover{
+        background-color: #f0f0f0;
+    }
+    .Info-List-mobile a img{
+        display: block;
+        margin: 0 auto;
+        width:30px;
+        height: 30px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+    /*页尾*/
+    #footer{
+        display: none;
+    }
+}

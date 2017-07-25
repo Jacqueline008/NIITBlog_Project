@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <!--css-header-->
     <link rel="stylesheet" href="../css/css_NIITheader.css">
+    <!--css-footer-->
+    <link rel="stylesheet" href="../css/css_NIITfooter.css">
     <!--css-NIITHome-->
     <link rel="stylesheet" href="../css/css_NIITHome.css">
 </head>
@@ -27,7 +29,7 @@
             <a href="NIITLogined_NormalUser.html" class="sn-user sn-hover"></a>
             <a href="NIITLogined_Admin_All.html" class="sn-admin sn-hover"></a>
             <a href="#" class="sn-logout sn-hover">退出</a>
-            <a href="NIITWriteLog.html" class="sn-write">
+            <a href="#" class="sn-write">
                 <img src="../images/write.png" alt=""><span>写文章</span>
             </a>
         </div>
@@ -35,14 +37,155 @@
 </div>
 
 
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
+<!--轮播组件-->
+<div class="carousel slide" data-ride="carousel" id="mycarousel">
+    <!--&lt;!&ndash;小点点&ndash;&gt;-->
+    <!--<ol class="carousel-indicators">-->
+        <!--<li data-target="#mycarousel" data-slide-to="0" class="active"></li>-->
+        <!--<li data-target="#mycarousel" data-slide-to="1"></li>-->
+        <!--<li data-target="#mycarousel" data-slide-to="2"></li>-->
+    <!--</ol>-->
+    <!--播放内容-->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active hotblog" name="24">
+            <img src="../images/home-banner5.jpg">
+            <div class="des">程序员应该知道的网站</div>
+        </div>
 
-<div id="bg_test" style="height: 100px;width: 100%;"></div>
+        <div class="item hotblog" name="26">
+            <img src="../images/home-banner8.png">
+            <div class="des">高效率软件工具分享</div>
+        </div>
+
+        <div class="item hotblog" name="25">
+            <img src="../images/home-banner1.jpg">
+            <div class="des">【品质生活指南】应用App 推荐</div>
+        </div>
+    </div>
+    <!--左右箭头-->
+    <a href="#mycarousel" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a href="#mycarousel" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+</div>
+
+<!--回顶部按钮-->
+<div id="back"><img src="../images/back.png"></div>
+
+<!--所有内容总容器-->
+<div id="allInfo-container">
+    <!--博文展示总容器-->
+    <div class="blogList-container">
+        <!--&lt;!&ndash;每一个博文列表项&ndash;&gt;-->
+        <!--<div class="blogItem" name="19">-->
+            <!--<div class="blog-left">-->
+                <!--<img src="../images/userPic.jpg">-->
+                <!--<span>amy</span>-->
+            <!--</div>-->
+            <!--<div class="blog-right">-->
+                <!--<div class="blog-title">这些全世界最流行，最有趣好玩的网站</div>-->
+                <!--<div class="blog-smallcontent">``` 互联网迅速发展的今天，中国互联网</div>-->
+                <!--<div class="blog-mix">-->
+                    <!--<img class="blog-typeimg" src="../images/blog-type.png">-->
+                    <!--<span class="blog-typespan">WEB前端</span>-->
+
+                    <!--<span class="blog-timespan">2017-01-09 21:09:09</span>-->
+                    <!--<img class="blog-timeimg" src="../images/blog-time.png">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--博文展示容器下方的阅读更多按钮-->
+        <div class="readmore">阅读更多</div>
+    </div>
+
+    <!--作者展示总容器-->
+    <div class="authorList-container">
+        <div class="author-intro">优秀作者</div>
+        <!--每一个作者列表项-->
+        <div class="authorItem" name="amy">
+            <div class="author-userPic">
+                <img src="../images/userPic.jpg">
+            </div>
+            <div class="author-mix">
+                <div class="author-name">amy</div>
+                <div class="author-userDes">努力,是为了将运气成分降到最低</div>
+            </div>
+        </div>
+        <!--每一个作者列表项-->
+        <div class="authorItem" name="Emily">
+            <div class="author-userPic">
+                <img src="../images/userPic3.jpg">
+            </div>
+            <div class="author-mix">
+                <div class="author-name">Emily</div>
+                <div class="author-userDes">分享计算机专业的相关知识</div>
+            </div>
+        </div>
+        <!--每一个作者列表项-->
+        <div class="authorItem" name="Jacqueline">
+            <div class="author-userPic">
+                <img src="../images/userPic2.jpg">
+            </div>
+            <div class="author-mix">
+                <div class="author-name">Jacqueline</div>
+                <div class="author-userDes">吾生也有涯，而知也无涯 。以有涯随无涯，殆已!</div>
+            </div>
+        </div>
+        <!--每一个作者列表项-->
+        <div class="authorItem" name="John">
+            <div class="author-userPic">
+                <img src="../images/userPic4.jpg">
+            </div>
+            <div class="author-mix">
+                <div class="author-name">John</div>
+                <div class="author-userDes">遥望心中的那片草原</div>
+            </div>
+        </div>
+        <!--每一个作者列表项-->
+        <div class="authorItem" name="Penny">
+            <div class="author-userPic">
+                <img src="../images/userPic5.jpg">
+            </div>
+            <div class="author-mix">
+                <div class="author-name">Penny</div>
+                <div class="author-userDes">主业Android 工程师,业余时间分享实用App 和效率工具。</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--模态框-->
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">来自NIITBlog的提示:</h4>
+            </div>
+            <div class="modal-body">
+                模态弹出窗主体内容
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--页尾-->
+<div id="footer">
+    <div class="container">
+        <img src="../images/footer.png">
+        <span>作者:青岛大学2014级开源方向-李艺鸣</span>
+    </div>
+</div>
+
+<!--<div id="bg_test" style="height: 100px;width: 100%;"></div>-->
 
 </body>
 
@@ -52,6 +195,7 @@
 <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 <!--js-header-->
 <script src="../javascript/js_NIITheader.js"></script>
-
+<!--js-NIITHome-->
+<script src="../javascript/js_NIITHome.js"></script>
 
 </html>

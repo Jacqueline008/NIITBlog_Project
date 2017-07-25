@@ -5,10 +5,233 @@
 }
 body{
     margin:0;
+    /*background-color: #f4f6f8;*/
+    font-family: '微软雅黑';
+    color:#555;
+}
+
+/*****************轮播组件 begin*******************************/
+/*轮播组件总容器*/
+#mycarousel{
+    width:970px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    top:70px;
+}
+/*轮播组件中的左右箭头*/
+.carousel-control.left {
+    background-image:none;
+}
+.carousel-control.right {
+    background-image:none;
+}
+/*轮播组件中每一个轮播中的图片*/
+#mycarousel img{
+    width:970px;
+    height: 350px;
+}
+/*轮播组件中每一个轮播中的图片下的描述*/
+#mycarousel .des{
+    background: rgba(47,47,64,0.3);
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+/*****************轮播组件 end*******************************/
+
+/*回顶部按钮*/
+#back{
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    border: 1px solid #547abb;
+    z-index:2000;
+    border-radius: 5px;
+    display: none;
+}
+#back:hover{
     background-color: #f4f6f8;
+}
+#back img{
+    width:50px;
+    height: 50px;
 }
 
 
+/***********************所有内容总容器 begin**************************/
+/*总容器*/
+#allInfo-container{
+    width:970px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top:120px;
+}
+/*********博文展示总容器 begin********/
+.blogList-container{
+    width:730px;
+    float: left;
+}
+/*每一个博文列表项 begin*/
+.blogItem{
+    width:100%;
+    height: 170px;
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: solid 1px #e7ecef;
+}
+.blogItem:hover{
+    background-color: #f4f6f8;
+}
+/*博文列表项左侧容器*/
+.blog-left{
+    width:120px;
+    height: 100%;
+    float: left;
+    /*background-color: yellow;*/
+}
+/*博文列表项左侧容器中头像*/
+.blog-left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*博文列表项左侧容器中作者*/
+.blog-left span{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/*博文列表项右侧容器*/
+.blog-right{
+    width:610px;
+    height: 100%;
+    float: left;
+}
+/*博文列表项右侧容器中的标题*/
+.blog-title{
+    width:100%;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 25px;
+    padding: 0 5px;
+}
+/*博文列表项右侧容器中的概要内容*/
+.blog-smallcontent{
+    width:100%;
+    height: 70px;
+    font-size: 14px;
+    padding: 0 5px;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+/*博文列表项右侧容器中的混合区*/
+.blog-mix{
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    padding-right: 40px;
+}
+.blog-mix img{
+    width: 20px;
+    height:20px;
+}
+/*博文列表项右侧容器中的混合区中的时间*/
+.blog-timespan{
+    float: right;
+}
+.blog-timeimg{
+    float: right;
+}
+/*每一个博文列表项 end*/
+/*博文展示容器下方的阅读更多*/
+.readmore{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #a5a5a5;
+    margin-top: 20px;
+}
+.readmore:hover{
+    background-color: #9b9b9b;
+}
+/*********博文展示总容器 end********/
+
+/*********作者展示总容器 begin******/
+.authorList-container{
+    width:240px;
+    float: left;
+    background-color: #fff;
+}
+.author-intro{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 5px;
+    line-height: 40px;
+    background-color: #ededed;
+}
+/*每一个作者列表项 begin*/
+.authorItem{
+    width:100%;
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: dashed 1px #c6cfd2;
+}
+.authorItem:hover{
+    background-color: #f4f6f8;
+}
+/*列表项中的头像*/
+.author-userPic{
+    width:50px;
+    float: left;
+    margin-left: 5px;
+}
+.author-userPic img{
+    width:50px;
+    height: 50px;
+    border-radius: 25px;
+}
+/*列表项中的混合区*/
+.author-mix{
+}
+/*列表项中的名字*/
+.author-name{
+    padding-left: 60px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+/*列表项中的个人描述*/
+.author-userDes{
+    padding-left: 60px;
+    padding-right: 5px;
+    font-size: 13px;
+}
+/*每一个作者列表项 end*/
+/*********作者展示总容器 end******/
+
+/***********************所有内容总容器 end**************************/
 
 /*媒体查询*/
 @media only screen and (max-width: 1200px) {
@@ -20,12 +243,211 @@ body{
     #bg_test{
         background-color: pink;
     }
+    /*****************轮播组件 begin*******************************/
+    /*轮播组件总容器*/
+    #mycarousel{
+        width:750px;
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+        top:70px;
+    }
+    /*轮播组件中每一个轮播中的图片*/
+    #mycarousel img{
+        width:750px;
+        height: 300px;
+    }
+    /*轮播组件中每一个轮播中的图片下的描述*/
+    #mycarousel .des{
+        height: 60px;
+        font-size: 23px;
+        line-height: 60px;
+    }
+    /*****************轮播组件 end*******************************/
+    /*回顶部按钮*/
+    #back{
+        bottom: 20px;
+        right: 10px;
+    }
+    #back img{
+        width:40px;
+        height: 40px;
+    }
+    /***********************所有内容总容器 begin**************************/
+    /*总容器*/
+    #allInfo-container{
+        width:750px;
+    }
+    /*********博文展示总容器 begin********/
+    .blogList-container{
+        width:750px;
+    }
+    /*每一个博文列表项 begin*/
+    /*博文列表项左侧容器*/
+    .blog-left{
+        width:120px;
+    }
+    /*博文列表项右侧容器*/
+    .blog-right{
+        width:630px;
+    }
+    /*博文列表项右侧容器中的概要内容*/
+    .blog-smallcontent{
+        padding-right: 30px;
+    }
+    /*博文列表项右侧容器中的混合区*/
+    .blog-mix{
+        padding-right: 30px;
+    }
+    /*每一个博文列表项 end*/
+    /*********博文展示总容器 end********/
 
+    /*********作者展示总容器 begin******/
+    .authorList-container{
+        width:100%;
+        margin-top: 20px;
+    }
+    /*********作者展示总容器 end******/
+
+    /***********************所有内容总容器 end**************************/
 
 }
 @media only screen and (max-width: 768px) {
     #bg_test{
         background-color: blue;
     }
+    /*****************轮播组件 begin*******************************/
+    /*轮播组件总容器*/
+    #mycarousel{
+        width:100%;
+        height: 180px;
+        margin: 0 auto;
+        position: relative;
+        top:70px;
+    }
+    /*轮播组件中每一个轮播中的图片*/
+    #mycarousel img{
+        width:100%;
+        height: 180px;
+    }
+    /*轮播组件中每一个轮播中的图片下的描述*/
+    #mycarousel .des{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    /*****************轮播组件 end*******************************/
+    /*回顶部按钮*/
+    #back{
+        bottom: 20px;
+        right: 15px;
+    }
+    #back img{
+        width:30px;
+        height: 30px;
+    }
+    /***********************所有内容总容器 begin**************************/
+    /*总容器*/
+    #allInfo-container{
+        width:100%;
+        top:80px;
+    }
+    /*********博文展示总容器 begin********/
+    .blogList-container{
+        width:100%;
+    }
+    /*每一个博文列表项 begin*/
+    .blogItem{
+        width:100%;
+        height: 160px;
+        background-color: #fff;
+        overflow: hidden;
+        border-bottom: solid 1px #e7ecef;
+    }
+    /*博文列表项左侧容器*/
+    .blog-left{
+        width:15%;
+    }
+    /*博文列表项左侧容器中头像*/
+    .blog-left img{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+    /*博文列表项左侧容器中作者*/
+    .blog-left span{
+        margin-top: 5px;
+        font-size: 13px;
+        word-break: break-all;
+    }
 
+    /*博文列表项右侧容器*/
+    .blog-right{
+        width:85%;
+    }
+    /*博文列表项右侧容器中的标题*/
+    .blog-title{
+        height: 15px;
+        font-size: 14px;
+        line-height: 15px;
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+    /*博文列表项右侧容器中的概要内容*/
+    .blog-smallcontent{
+        width:100%;
+        height: 80px;
+        font-size: 13px;
+        padding: 0 5px;
+        padding-right: 5px;
+        margin-top: 10px;
+    }
+    /*博文列表项右侧容器中的混合区*/
+    .blog-mix{
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 5px;
+        padding-right: 15px;
+    }
+    /*每一个博文列表项 end*/
+    /*博文展示容器下方的阅读更多*/
+    .readmore{
+        width: 95%;
+    }
+    /*********博文展示总容器 end********/
+
+    /*********作者展示总容器 begin******/
+    .authorList-container{
+        width:100%;
+    }
+    .author-intro{
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 5px;
+        line-height: 40px;
+        background-color: #ededed;
+    }
+    /*每一个作者列表项 begin*/
+    .authorItem{
+        width:100%;
+        overflow: hidden;
+        padding: 10px 0;
+        border-bottom: dashed 1px #c6cfd2;
+    }
+    /*列表项中的混合区*/
+    .author-mix{
+    }
+    /*列表项中的名字*/
+    .author-name{
+        padding-left: 60px;
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    /*每一个作者列表项 end*/
+    /*********作者展示总容器 end******/
+
+    /***********************所有内容总容器 end**************************/
 }

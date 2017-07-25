@@ -86,7 +86,6 @@ body{
 }
 /*这里一定要用textarea*/
 textarea, #editor div {
-    display: inline-block;
     width: 49%;
     height: 100%;
     vertical-align: top;
@@ -95,8 +94,14 @@ textarea, #editor div {
 }
 #editor div{
     word-break: break-all;
+    overflow-y:scroll;
+    float:right;
+}
+#editor div img{
+    max-width: 100%;
 }
 textarea {
+    float: left;
     border: none;
     border-right: 1px solid #ccc;
     background-color: #fff;
@@ -178,7 +183,7 @@ textarea {
         line-height: 28px;
         position: absolute;
         bottom:20px;
-        right: 20px;
+        right: 30px;
         border-radius: 25px;
         color:#fff;
         font-size: 14px;
@@ -201,18 +206,14 @@ textarea {
     #editor div{
         word-break: break-all;
     }
-    /*textarea{*/
-    /*display: none;*/
-    /*}*/
-    /*#editor div{*/
-    /*display: block;*/
-    /*}*/
+    /**/
     textarea{
     display: block;
     }
     #editor div{
     display: none;
     }
+    /**/
     textarea {
         border: none;
         border-right: 1px solid #ccc;

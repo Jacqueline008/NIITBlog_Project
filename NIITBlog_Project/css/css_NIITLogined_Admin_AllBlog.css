@@ -1,0 +1,369 @@
+#bg_test{
+    position: relative;
+    top:150px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    /*background-color: #f4f6f8;*/
+    color:#333;
+    font-family: '微软雅黑';
+}
+
+/***************************所有个人信息容器 begin**************************/
+#allInfo-container{
+    width:970px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top:120px;
+    overflow: hidden;
+}
+/*****************右侧信息展示*************/
+/*右侧信息展示(模板)*/
+.Info-Content{
+    /*background-color: cadetblue;*/
+    width: 770px;
+    float: right;
+}
+
+/*右侧信息展示(自定义)*/
+
+/*******************博文管理总容器 begin**************************/
+.blogMg-container{
+    width:500px;
+    margin: 0 auto;
+    min-height: 500px;
+}
+.nav-tabs > li > a {
+    background-color: #f4f6f8;
+    width:245px;
+    text-align: center;
+    border-radius: 0px;
+    font-size:15px;
+    color:#2f2f2f;
+}
+.allBlog-container,.theBlog-container{
+    width:100%;
+    min-height: 500px;
+}
+/*全部博文中有内容时的容器*/
+#allBlog-container .hasContent-Container{
+    display: block;
+}
+/*博文管理中有内容和没有内容时显示的容器*/
+#theBlog-container .noContent-Container,#theBlog-container .hasContent-Container{
+    display: none;
+}
+/*全部博文和博文管理容器中有内容时的容器*/
+/*每一个列表项********  begin*/
+.hasContent-Container .BlogItem{
+    width: 100%;
+    height: 110px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    /*background-color: pink;*/
+}
+/*列表项中的上方混合区 begin*/
+/*混合区中的头像*/
+.Blog-mix img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    left: 0px;
+}
+/*混合区中的作者*/
+.Blog-author{
+    font-size: 16px;
+    position: relative;
+    left: 10px;
+}
+.Blog-author:hover{
+    color:#547abb;
+    text-decoration: underline;
+}
+/*混合区中的创建时间*/
+.Blog-createTime{
+    font-size: 12px;
+    color: #969696;
+    position: relative;
+    left: 20px;
+}
+/*混合区中的删除按钮*/
+.Blog-mix button{
+    width: 70px;
+    height: 28px;
+    background-color: #949494;
+    line-height: 28px;
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    float: right;
+}
+.Blog-mix button:hover{
+   background-color:#547abb;
+}
+/*列表项中的上方混合区 end*/
+/*列表项中的标题*/
+.Blog-title{
+    width: 100%;
+    height: 30px;
+    word-break: break-all;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 5px;
+}
+.Blog-title:hover{
+    color:#547abb;
+    text-decoration: underline;
+}
+/*每一个列表项********  end*/
+/********博文筛选容器 begin*/
+/*博文筛选中的搜索容器*/
+#theBlog-container .search-container {
+    width: 100%;
+    height: 70px;
+    /*background-color: pink;*/
+}
+.search-container input{
+    width:380px;
+    height: 30px;
+    line-height: 30px;
+    font-weight:400;
+    font-size: 15px;
+    border:1px solid #547abb;
+    border-radius: 10px;
+    position: relative;
+    top:20px;
+    left:0px;
+    padding-left: 20px;
+}
+.search-container button{
+    width:70px;
+    height: 28px;
+    background-color: #547abb;
+    line-height: 28px;
+    font-size: 13px;
+    position: relative;
+    top:20px;
+    right:10px;
+    border-radius: 4px;
+    color:#fff;
+    border:none;
+    float: right;
+}
+.search-container button:hover{
+    background-color: #949494;
+}
+/*博文筛选中没有内容时显示的容器*/
+.noContent-Container{
+    width:100%;
+    height: 250px;
+}
+.noContent-Container img{
+    width:100px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top:50px;
+}
+.noContent-Container span{
+    font-size:15px;
+    color:#2f2f2f;
+    display: block;
+    margin: 0 auto;
+    width:140px;
+    position: relative;
+    top:70px;
+}
+/********博文筛选容器 end*/
+/*******************博文管理总容器 end**************************/
+
+/******************左侧信息展示*************/
+/*先隐藏为移动端设置的左侧信息列表样式*/
+.Info-List-mobile{
+    display: none;
+}
+/*左侧信息列表*/
+.Info-List{
+    display: block;
+    width: 200px;
+    float: right;
+    background-color:#fff;
+    height: 200px;
+}
+.Info-List a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-size:15px;
+    color:#2f2f2f;
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+/*博文管理列表项*/
+.blogMg{
+    background-color: #f0f0f0;
+}
+.Info-List a:hover{
+    background-color: #f0f0f0;
+}
+.Info-List a img{
+    width:30px;
+    height: 30px;
+    margin-right: 20px;
+}
+/***************************所有个人信息容器 end**************************/
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:750px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 550px;
+    }
+    /******************左侧信息展示*************/
+    /*左侧信息列表*/
+    .Info-List{
+        width: 200px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:100%;
+        top:80px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 100%;
+    }
+    /*右侧信息展示(自定义)*/
+    /*******************博文管理总容器 begin**************************/
+    .blogMg-container{
+        width:350px;
+        min-height: 350px;
+    }
+    .nav-tabs > li > a {
+        width:173px;
+    }
+    .allBlog-container,.theBlog-container{
+        width:100%;
+        min-height: 350px;
+    }
+    /*全部博文和博文管理容器中有内容时的容器*/
+    /*每一个列表项********  begin*/
+    .hasContent-Container .BlogItem{
+        width: 100%;
+        height: 90px;
+        padding: 5px 0;
+        border-bottom: 1px solid #f0f0f0;
+        /*background-color: pink;*/
+    }
+    /*列表项中的上方混合区 begin*/
+    /*混合区中的作者*/
+    .Blog-author{
+        left: 5px;
+    }
+    /*混合区中的创建时间*/
+    .Blog-createTime{
+        left: 10px;
+    }
+    /*混合区中的删除按钮*/
+    .Blog-mix button{
+        width: 50px;
+        right: 5px;
+    }
+    /*列表项中的上方混合区 end*/
+    /*列表项中的标题*/
+    .Blog-title{
+        font-size: 15px;
+    }
+    /*每一个列表项********  end*/
+    /********博文筛选容器 begin*/
+    /*博文筛选中的搜索容器*/
+    #theBlog-container .search-container {
+        width: 100%;
+        height: 70px;
+        /*background-color: pink;*/
+    }
+    .search-container input{
+        width:260px;
+    }
+    .search-container button{
+        right:5px;
+    }
+    /********博文筛选容器 end*/
+    /*******************博文管理总容器 end**************************/
+
+    /******************左侧信息展示*************/
+    /*隐藏为大屏设置的左侧信息列表样式*/
+    .Info-List{
+        display: none;
+    }
+    .Info-List-mobile{
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index:2000;
+        background-color: #fff;
+        border-top: 1px solid #f0f0f0;
+    }
+    .Info-List-mobile a{
+        display: block;
+        width: 50%;
+        height: 50px;
+        float: left;
+        text-decoration: none;
+        font-size:12px;
+        color:#2f2f2f;
+        text-align: center;
+    }
+    .Info-List-mobile a:hover{
+        background-color: #f0f0f0;
+    }
+    .Info-List-mobile a img{
+        display: block;
+        margin: 0 auto;
+        width:30px;
+        height: 30px;
+    }
+    .userMg-mobile{
+        border-right: 1px solid #ededed;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+
+    /*页尾*/
+    #footer{
+        display: none;
+    }
+}

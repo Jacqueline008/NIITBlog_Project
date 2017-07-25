@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>NIITBlog-博客</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <!--css-header-->
+    <link rel="stylesheet" href="../css/css_NIITheader.css">
+    <!--css-footer-->
+    <link rel="stylesheet" href="../css/css_NIITfooter.css">
+    <!--css-NIITBlog-->
+    <link rel="stylesheet" href="../css/css_NIITBlog.css">
+</head>
+<body>
+<!--**************************************-->
+<!--网页上方固定不动的标头-->
+<div id="site-nav">
+    <div class="sn-container">
+        <!--网站logo-->
+        <a href='NIITHome.html' class="sn-logo"><img src="../images/logo.png" alt=""></a>
+        <!--展示下拉菜单的图标-->
+        <a href="#" class="sn-showmenu"><img src="../images/menu1.png" alt=""></a>
+        <!--快速导航菜单-->
+        <div class="sn-quick-menu">
+            <a href="NIITHome.html" class="sn-home sn-hover">首页</a>
+            <a href="NIITLogin.html" class="sn-login sn-hover">登录</a>
+            <a href="NIITLogined_NormalUser.html" class="sn-user sn-hover"></a>
+            <a href="NIITLogined_Admin_All.html" class="sn-admin sn-hover"></a>
+            <a href="#" class="sn-logout sn-hover">退出</a>
+            <a href="#" class="sn-write">
+                <img src="../images/write.png" alt=""><span>写文章</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--博文展示总区域-->
+<div id="blog-allcontainer">
+    <!--博文标题-->
+    <div class="blog-title"></div>
+
+    <!--关于博文作者和此篇博文的一些综合信息区域-->
+    <div class="blog-mixcontainer">
+        <!--博文作者头像-->
+        <img class="blog-authorimg" src="" name=""/>
+        <!--右侧综合信息区域-->
+        <div class="mixcontainer-right">
+            <div class="mixcontainer-right-left">
+                <span class="blog-authorspan">作者</span>
+                <span class="blog-authorname" name=""></span>
+                <span class="blog-time"></span>
+                <span class="blog-type"></span>
+            </div>
+            <div class="mixcontainer-right-right">
+                <div class="sendMsg">发私信</div>
+                <div class="addAttention"><img src="../images/addAttention.png">关注</div>
+                <div class="deleteAttention"><img src="../images/deleteAttention.png">已关注</div>
+            </div>
+        </div>
+    </div>
+
+    <!--博文内容-->
+    <div id="blogContent" class="blog-content" v-html="compiledMarkdown"></div>
+
+    <!--喜欢和不喜欢区域-->
+    <div class="likecontainer">
+        <!--喜欢按钮-->
+        <div class="like-btn">
+            <img src="../images/like-btn.png">
+            <span>喜欢</span>
+            <span class="number"></span>
+        </div>
+        <!--不喜欢按钮-->
+        <div class="dislike-btn">
+            <img src="../images/dislike-btn.png">
+            <span>不喜欢</span>
+            <span class="number"></span>
+        </div>
+    </div>
+
+    <!--写评论区域-->
+    <div class="blog-writeView">
+        <div class="writeView-up">
+            <div class="writeView-content">
+                <textarea maxlength="200" placeholder="请输入您的评论(至多200个字)"></textarea>
+            </div>
+            <div class="writeView-author">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="writeView-down">
+            <button class="writeView-send">发送</button>
+        </div>
+    </div>
+
+    <div class="ViewNumbers"><span>0条评论</span></div>
+    <!--评论展示区-->
+    <div class="ViewContainer">
+    </div>
+    <!--没有评论展示区-->
+    <div class="NoViewContainer">
+        <img src="../images/noView.png" alt="">
+        <p>暂无评论,赶紧来抢沙发吧!</p>
+    </div>
+</div>
+
+<!--模态框-->
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">来自NIITBlog的提示:</h4>
+            </div>
+            <div class="modal-body">
+                模态弹出窗主体内容
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--页尾-->
+<div id="footer">
+    <div class="container">
+        <img src="../images/footer.png">
+        <span>作者:青岛大学2014级开源方向-李艺鸣</span>
+    </div>
+</div>
+
+<!--<div id="bg_test" style="height: 100px;width: 100%;"></div>-->
+
+</body>
+
+<!--js-jquery-->
+<script src="../javascript/jquery-2.2.4.min.js"></script>
+<!--bootstrap-->
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<!--js-header-->
+<script src="../javascript/js_NIITheader.js"></script>
+<!--js-markdown-->
+<script src="../javascript/marked.min.js"></script>
+<script src="../javascript/lodash-4.16.0.js"></script>
+<!--js-Vue-->
+<script src="../javascript/vue.js"></script>
+<!--js-NIITBlog-->
+<script src="../javascript/js_NIITBlog.js"></script>
+
+
+</html>

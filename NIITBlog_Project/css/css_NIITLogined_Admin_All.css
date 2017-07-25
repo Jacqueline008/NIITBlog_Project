@@ -1,0 +1,338 @@
+#bg_test{
+    position: relative;
+    top:150px;
+    background-color: purple;
+}
+body{
+    margin:0;
+    /*background-color: #f4f6f8;*/
+    color:#333;
+    font-family: '微软雅黑';
+}
+
+/***************************所有个人信息容器 begin**************************/
+#allInfo-container{
+    width:970px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top:120px;
+    overflow: hidden;
+}
+/*****************右侧信息展示*************/
+/*右侧信息展示(模板)*/
+.Info-Content{
+    /*background-color: cadetblue;*/
+    width: 770px;
+    float: right;
+}
+
+/*右侧信息展示(自定义)*/
+
+/**************************用户管理总容器 begin**********************************/
+.userMg-container{
+    width:500px;
+    margin: 0 auto;
+}
+.nav-tabs > li > a {
+    background-color: #f4f6f8;
+    width:245px;
+    text-align: center;
+    border-radius: 0px;
+    font-size:15px;
+    color:#2f2f2f;
+}
+#allUser-container,#theUser-container{
+    min-height: 500px;
+}
+/*全部用户中的有内容时的容器*/
+#allUser-container .hasContent-Container{
+    display: block;
+}
+/*用户筛选中的没有内容时的容器*/
+#theUser-container .noContent-Container{
+    display: none;
+}
+#theUser-container .hasContent-Container{
+    display: none;
+}
+/*全部用户和用户筛选有内容中的每一个列表项 begin*/
+.UserItem{
+    width:100%;
+    height: 70px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #f0f0f0;
+}
+/*列表项中的头像*/
+.UserItem img{
+    width:50px;
+    height: 50px;
+    border-radius:25px;
+    margin-left: 95px;
+}
+/*列表项中的用户名*/
+.UserItem span{
+    margin-left: 100px;
+    font-size: 18px;
+}
+.UserItem span:hover{
+    color:#547abb;
+    text-decoration: underline;
+}
+/*列表项中的删除按钮*/
+.UserItem button{
+    width:70px;
+    height: 28px;
+    background-color: #949494;
+    line-height: 28px;
+    font-size: 13px;
+    position: relative;
+    top:10px;
+    right:10px;
+    border-radius: 4px;
+    color:#fff;
+    border:none;
+    float: right;
+}
+.UserItem button:hover{
+    background-color:#547abb;
+}
+/*全部用户和用户筛选有内容中的每一个列表项 end*/
+
+/*******用户筛选容器 begin*/
+/*用户筛选中的搜索容器*/
+.search-container {
+    width: 100%;
+    height: 70px;
+    /*background-color: pink;*/
+}
+.search-container input{
+    width:380px;
+    height: 30px;
+    line-height: 30px;
+    font-weight:400;
+    font-size: 15px;
+    border:1px solid #547abb;
+    border-radius: 10px;
+    position: relative;
+    top:20px;
+    left:0px;
+    padding-left: 20px;
+}
+.search-container button{
+    width:70px;
+    height: 28px;
+    background-color: #547abb;
+    line-height: 28px;
+    font-size: 13px;
+    position: relative;
+    top:20px;
+    right:10px;
+    border-radius: 4px;
+    color:#fff;
+    border:none;
+    float: right;
+}
+.search-container button:hover{
+    background-color: #949494;
+}
+/*用户筛选容器搜索的结果 没有内容时显示的容器*/
+.noContent-Container{
+    width:100%;
+    height: 250px;
+}
+.noContent-Container img{
+    width:100px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top:50px;
+}
+.noContent-Container span{
+    font-size:15px;
+    color:#2f2f2f;
+    display: block;
+    margin: 0 auto;
+    width:140px;
+    position: relative;
+    top:70px;
+}
+/*******用户筛选容器 end*/
+/*******************用户管理总容器 begin**********************************/
+
+/******************左侧信息展示*************/
+/*先隐藏为移动端设置的左侧信息列表样式*/
+.Info-List-mobile{
+    display: none;
+}
+/*左侧信息列表*/
+.Info-List{
+    display: block;
+    width: 200px;
+    float: right;
+    background-color:#fff;
+    height: 200px;
+}
+.Info-List a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    font-size:15px;
+    color:#2f2f2f;
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+/*用户管理列表项*/
+.userMg{
+    background-color: #f0f0f0;
+}
+.Info-List a:hover{
+    background-color: #f0f0f0;
+}
+.Info-List a img{
+    width:30px;
+    height: 30px;
+    margin-right: 20px;
+}
+/***************************所有个人信息容器 end**************************/
+
+/*媒体查询*/
+@media only screen and (max-width: 1200px) {
+    #bg_test{
+        background-color: gray;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #bg_test{
+        background-color: pink;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:750px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 550px;
+    }
+    /******************左侧信息展示*************/
+    /*左侧信息列表*/
+    .Info-List{
+        width: 200px;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+}
+@media only screen and (max-width: 768px) {
+    #bg_test{
+        background-color: blue;
+    }
+    /***************************所有个人信息容器 begin**************************/
+    #allInfo-container{
+        width:100%;
+        top:80px;
+    }
+    /******************右侧信息展示*************/
+    /*右侧信息展示(模板)*/
+    .Info-Content{
+        width: 100%;
+    }
+    /*右侧信息展示(自定义)*/
+
+    /**************************用户管理总容器 begin**********************************/
+    .userMg-container{
+        width:350px;
+    }
+    .nav-tabs > li > a {
+        width:173px;
+    }
+    #allUser-container,#theUser-container{
+        min-height: 350px;
+    }
+    /*全部用户和用户筛选中的有内容时的容器*/
+    .hasContent-Container{
+        width:100%;
+    }
+    /*全部用户和用户筛选有内容中的每一个列表项 begin*/
+    .UserItem{
+        height: 60px;
+        padding: 5px 0;
+    }
+    /*列表项中的头像*/
+    .UserItem img{
+        margin-left:60px;
+    }
+    /*列表项中的用户名*/
+    .UserItem span{
+        margin-left: 60px;
+        font-size: 16px;
+    }
+    /*列表项中的删除按钮*/
+    .UserItem button{
+        width:50px;
+        right:5px;
+    }
+    /*全部用户和用户筛选有内容中的每一个列表项 end*/
+
+    /*******用户筛选容器 begin*/
+    /*用户筛选中的搜索容器*/
+    .search-container {
+        width: 100%;
+        height: 70px;
+        /*background-color: pink;*/
+    }
+    .search-container input{
+        width:260px;
+    }
+    .search-container button{
+        right:5px;
+    }
+    /*******用户筛选容器 end*/
+    /**************************用户管理总容器 end************************/
+
+    /******************左侧信息展示*************/
+    /*隐藏为大屏设置的左侧信息列表样式*/
+    .Info-List{
+        display: none;
+    }
+    .Info-List-mobile{
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        z-index:2000;
+        background-color: #fff;
+        border-top: 1px solid #f0f0f0;
+    }
+    .Info-List-mobile a{
+        display: block;
+        width: 50%;
+        height: 50px;
+        float: left;
+        text-decoration: none;
+        font-size:12px;
+        color:#2f2f2f;
+        text-align: center;
+    }
+    .Info-List-mobile a:hover{
+        background-color: #f0f0f0;
+    }
+    .Info-List-mobile a img{
+        display: block;
+        margin: 0 auto;
+        width:30px;
+        height: 30px;
+    }
+    .userMg-mobile{
+        border-right: 1px solid #ededed;
+    }
+    /***************************所有个人信息容器 end**************************/
+
+    /*页尾*/
+    #footer{
+        display: none;
+    }
+}

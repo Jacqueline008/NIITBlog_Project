@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>NIITBlog-首页</title>
+    <title>NIITBlog-用户个人信息</title>
     <!--bootstrap-->
     <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <!--css-header-->
     <link rel="stylesheet" href="../css/css_NIITheader.css">
+    <!--css-footer-->
+    <link rel="stylesheet" href="../css/css_NIITfooter.css">
     <!--css-NIITLogined_NormalUser-->
     <link rel="stylesheet" href="../css/css_NIITLogined_NormalUser.css">
 </head>
@@ -27,7 +29,7 @@
             <a href="NIITLogined_NormalUser.html" class="sn-user sn-hover"></a>
             <a href="NIITLogined_Admin_All.html" class="sn-admin sn-hover"></a>
             <a href="#" class="sn-logout sn-hover">退出</a>
-            <a href="NIITWriteLog.html" class="sn-write">
+            <a href="#" class="sn-write">
                 <img src="../images/write.png" alt=""><span>写文章</span>
             </a>
         </div>
@@ -35,14 +37,88 @@
 </div>
 
 
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
+<!--所有个人信息容器-->
+<div id="allInfo-container">
+    <!--右侧信息展示-->
+    <div class="Info-Content">
+        <!--右侧信息中的用户头像区域-->
+        <div class="userInfo-picContainer">
+            <!--用户头像展示-->
+             <div class="userInfo-oldpic">
+                <img src="">
+             </div>
+            <!--用户新头像提交表单-->
+            <form class="userInfo-newpic"
+                  action="../php/NIITInfoUploadPicClient.php" method="post" target="_self"
+                  enctype="multipart/form-data">
+                <div class="newpic-uploadcontainer">上传图片<input type="file" name="newpic-upload" class="newpic-upload" required></div>
+                <input type="submit" name="newpic-uploadsubmit" class="newpic-uploadsubmit" value="保存头像">
+            </form>
+        </div>
+        <!--右侧信息中的用户文字区域-->
+        <form class="userInfo-textContainer"
+              action="../php/NIITInfoUploadTextClient.php" method="post" target="_self">
+            <div class='theUserName'>
+                <span>用 户 名:</span><input name="UserName" class='UserName' type='text' disabled/>
+            </div>
 
-<div id="bg_test" style="height: 100px;width: 100%;"></div>
+            <div class='theUserTel'>
+                <span>绑定手机:</span><input name="UserTel" class='UserTel' type='text' required/>
+            </div>
+
+            <div class='theUserDes'>
+                <span>个人描述:</span><textarea name="UserDes" class='UserDes' maxlength="100" placeholder="请填写您的个人简介" required></textarea>
+            </div>
+
+            <div class='userInfo-textsubmit'>
+                <input type='submit' value='保存修改'>
+            </div>
+        </form>
+    </div>
+    <!--左侧信息列表-->
+    <div class="Info-List">
+        <a href="NIITLogined_NormalUser.html" class="userInfo"> <img src="../images/userInfo.png">个人信息</a>
+        <a href="NIITLogined_NormalUserBlog.html" class="typedBlog"> <img src="../images/typedBlog.png">博文分类</a>
+        <a href="NIITLogined_NormalUserAttention.html" class="attentionMg"> <img src="../images/attentionMg.png">关注管理</a>
+        <a href="NIITLogined_NormalUserMsg.html" class="msgMg"> <img src="../images/msgMg.png">私信管理</a>
+    </div>
+    <!--左侧信息列表-移动端样式-->
+    <div class="Info-List-mobile">
+        <a href="NIITLogined_NormalUser.html" class="userInfo-mobile"> <img src="../images/userInfo.png">我</a>
+        <a href="NIITLogined_NormalUserBlog.html" class="typedBlog-mobile"> <img src="../images/typedBlog.png">博文</a>
+        <a href="NIITLogined_NormalUserAttention.html" class="attentionMg-mobile"> <img src="../images/attentionMg.png">关注</a>
+        <a href="NIITLogined_NormalUserMsg.html" class="msgMg-mobile"> <img src="../images/msgMg.png">私信</a>
+    </div>
+</div>
+
+<!--模态框-->
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">来自NIITBlog的提示:</h4>
+            </div>
+            <div class="modal-body">
+                模态弹出窗主体内容
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--页尾-->
+<div id="footer">
+    <div class="container">
+        <img src="../images/footer.png">
+        <span>作者:青岛大学2014级开源方向-李艺鸣</span>
+    </div>
+</div>
+
+
+<!--<div id="bg_test" style="height: 100px;width: 100%;"></div>-->
 
 </body>
 
@@ -52,6 +128,8 @@
 <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 <!--js-header-->
 <script src="../javascript/js_NIITheader.js"></script>
+<!--js-NIITLogined_NormalUser-->
+<script src="../javascript/js_NIITLogined_NormalUser.js"></script>
 
 
 </html>
