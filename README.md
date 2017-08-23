@@ -1,6 +1,6 @@
 # NIITBlog_Project概要设计文档
 ****
-##### 备注:        NIIT印度游学参赛项目
+##### 备注:        NIIT印度游学参赛项目--博客网站（个人单独完成制作）
 ##### 作者:        李艺鸣
 ##### 项目在线地址: http://182.254.152.14/phpStorm_Project/NIITBlog_Project/html/NIITHome.html (测试用户名:niit 密码:123 也可以自行注册体验)
 ##### 项目讲解视频在线观看: (优酷) http://v.youku.com/v_show/id_XMjkxNzc5ODI4MA==.html?spm=a2hzp.8253869.0.0
